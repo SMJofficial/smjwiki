@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Wiki</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        #sidebar {
+            width: 250px;
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+        #sidebar h2 {
+            margin-top: 0;
+        }
+        #sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        #sidebar ul li {
+            margin-bottom: 10px;
+        }
+        #sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        #main-content {
+            flex: 1;
+            padding: 20px;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        main {
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Simple Wiki</h1>
+    </header>
+    <div id="sidebar">
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="#page1">Page 1</a></li>
+            <li><a href="#page2">Page 2</a></li>
+            <li><a href="#page3">Page 3</a></li>
+            <li><a href="#page4">Page 4</a></li>
+        </ul>
+    </div>
+    <div id="main-content">
+        <main>
+            <section id="page1">
+                <h2>Page 1</h2>
+                <p>Content for Page 1.</p>
+            </section>
+            <section id="page2">
+                <h2>Page 2</h2>
+                <p>Content for Page 2.</p>
+            </section>
+            <section id="page3">
+                <h2>Page 3</h2>
+                <p>Content for Page 3.</p>
+            </section>
+            <section id="page4">
+                <h2>Page 4</h2>
+                <p>Content for Page 4.</p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
